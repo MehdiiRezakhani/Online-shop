@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px 150px 50px;
+  padding: 20px;
+  border: 1px solid silver;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.image {
+  width: 450px;
+}
+
+.textContainer {
+  text-align: left;
+  margin-left: 30px;
+  padding: 20px;
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+
+.textContainer h3 {
+  color: #FF5500;
+  font-size: 20px;
+}
+
+.description {
+  color: rgb(62, 62, 62);
+  margin-bottom: 30px;
+}
+
+.category {
+  color: rgb(62, 62, 62);
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.category span {
+  color: orange;
+  font-size: 1rem;
+}
+
+
+.buttonBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.price {
+  display: inline-block;
+  background: #fff;
+  padding: 7px 16px;
+  color: #ff5500;
+  border: 1px solid #ff5500;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.buttonContainer button {
+  font-size: 0.9rem;
+  background-color: #FF5500;
+  border: none;
+  color: #fff;
+  height: 30px;
+  width: 120px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-left: 5px;
+}
+
+.smallButton {
+  width: 30px !important;
+  font-size: 1.6rem !important;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.smallButton img {
+  width: 20px;
+}
+
+.buttonContainer button:hover {
+  background-color: #FFF;
+  color: #FF5500;
+  border: 1px solid #ff5500;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.counter {
+  display: inline-block;
+  width: 20px;
+  margin-left: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FF5500;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 120px 80px 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image {
+    width: 170px;
+    margin-bottom: 50px;
+  }
+  .textContainer {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 120px 40px 50px;
+    justify-content: center;
+  }
+  .textContainer {
+    margin: 0;
+  }
+}
+
+@media (max-width: 555px) {
+  .container {
+    margin: 120px 20px 50px;
+    justify-content: center;
+  }
+  .textContainer {
+    margin: 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .buttonContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .price {
+    margin-bottom: 40px;
+  }
+}

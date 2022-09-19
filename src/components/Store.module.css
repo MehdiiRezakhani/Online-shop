@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  padding: 0 150px;
+}
+.container input {
+  padding: 20px 15px;
+  width: 60%;
+  color: #f50;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.container input :focus{
+  border: 1px solid #f50;
+}
+.storeSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 15px 80px;
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px 40px;
+  }
+}
+
+@media (max-width: 555px) {
+  .container {
+    justify-content: center;
+    padding: 15px 10px;
+  }
+}
+
+/* @media (max-width: 555px) {
+  .container {
+    padding: 15px 10px;
+  }
+} */

@@ -1,0 +1,11 @@
+footer {
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+footer h5 a {
+    text-decoration: underline;
+    color: #ff5500;
+}
